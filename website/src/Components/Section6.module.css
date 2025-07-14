@@ -1,0 +1,176 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  background-color: #0e162e;
+  flex-wrap: wrap;
+  overflow: visible;
+  height: 529px;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.imageContainer {
+  position: relative;
+  margin-top: -110px; 
+  transform: translateX(-130px);
+  z-index: 2;
+}
+
+.image {
+  width: 480px;
+  height: 560px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.experienceCard {
+  position: absolute;
+  top: 65%;
+  right: -130px;
+  width: 171px;
+  height: 189px;
+  background: white;
+  border-radius: 12px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  transform: translateY(-50%);
+}
+
+.star {
+  font-size: 22px;
+  color: gold;
+}
+
+.years {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.count {
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+  line-height: 1;
+}
+
+.label {
+  font-size: 19px;
+  color: #2D2D2D;
+  line-height: 1.4;
+  font-family: sans-serif;
+}
+
+.content {
+  margin-left: 60px;
+  max-width: 500px;
+  text-align: left;
+  z-index: 1;
+}
+
+.heading {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-family: sans-serif;
+}
+
+.subheading {
+  font-size: 20px;
+  color: #ccc;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.ctaButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #c60000;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+    height: auto;  
+    padding-top: 60px;
+  }
+
+  .imageContainer {
+    margin-top: 0;
+    transform: none;  
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .experienceCard {
+    position: relative;  
+    top: auto;
+    right: auto;
+    margin: 0 auto 20px;
+    transform: none;
+    width: 140px;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .subheading {
+    font-size: 18px;
+  }
+
+  .ctaButton {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .subheading {
+    font-size: 16px;
+  }
+
+  .ctaButton {
+    width: 100%;
+    padding: 14px 0;
+  }
+}

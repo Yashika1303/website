@@ -1,0 +1,109 @@
+.footer {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 40px 30px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  font-family: sans-serif;
+  margin-top: 2rem;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 15px;
+  color: #ccc;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 14px;
+  font-size: 20px;
+  color: white;
+}
+
+.column h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column li {
+  margin-bottom: 10px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.column li:hover {
+  color: white;
+}
+
+.column address {
+  font-style: normal;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.column p {
+  color: #ccc;
+  margin: 4px 0;
+}
+
+.bottomSection {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+}
+
+.certifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  margin-left: 5rem;
+}
+
+
+.copy {
+  font-size: 14px;
+  color: #ccc;
+  margin-left: 25rem;
+  margin-top: 2rem;
+  font-family: sans-serif;
+}
+@media (max-width: 1250px) {
+  .bottomSection {
+   flex-direction: column;
+   
+  }
+  .copy{
+    text-align: center;
+   margin: auto;
+  }
+
+
+}

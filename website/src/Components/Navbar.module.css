@@ -1,0 +1,134 @@
+.nav{
+    height: 110px;
+    background-color: #fff;
+    display:flex;
+    align-items: center;
+    position: sticky;
+  top: 0;
+  z-index: 1000; 
+    
+}
+.logo{
+    background-image: url("../assets/Logo.png");
+    background-size: cover;
+    width: 121px;
+    height: 94px;
+    margin-left: 8%;
+    margin-right: 9%;
+    flex-shrink: 0; 
+}
+.opt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin-right: 2%;
+}
+.other{
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.other:hover{
+    border-top:3px solid #d70c00;
+    border-bottom: 2px solid #d70c00;
+    color: #d70c00;
+}
+.quote{
+    background-color: #d70c00;
+    height: 45px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 25px;
+    width: 10%;
+    font-weight: bold;
+    margin-right: 9%;
+}
+
+
+.hamburger {
+  
+  display: none;
+  cursor: pointer;
+  color: #d70c00;
+  z-index: 1100;
+  position: relative;
+  margin-left: 10px; 
+  margin-right: 10px;
+
+}
+
+/* Mobile menu styles */
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 15px;
+  position: absolute;
+  width: 100%;
+  top: 110px; 
+  left: 0;
+  z-index: 999;
+  overflow-y: auto;
+  max-height: calc(100vh - 110px); 
+}
+
+.mobileMenu div {
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.mobileMenu div:hover {
+  background-color: #f8f8f8;
+  color: #d70c00;
+}
+
+ @media screen and (max-width: 991px) {
+    .nav {
+    padding-right: 20px; 
+  }
+  .opt {
+    display: none;
+  }
+
+  .quote {
+    margin-left: auto;
+    margin-right: 20px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    min-width: 130px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1100;
+  }
+
+  .logo {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .hamburger {
+    margin-left: 20px; 
+    margin-right: 20px;
+  }
+
+  
+  .quote {
+    margin-right: 15px;
+  }
+}
