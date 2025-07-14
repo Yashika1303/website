@@ -1,232 +1,86 @@
-.testimonialSection {
-  padding: 4rem 1rem;
-  background: #fff;
-  position: relative;
-  overflow: hidden;
+/* ─── section wrapper ───────────────────────────────────── */
+.section {
   max-width: 1300px;
-  margin: auto;
-  margin-top: 4rem;
+  margin: 4rem auto;
+  padding: 2rem 1rem;
 }
 
-.headerRow {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 3rem;
-  gap: 1rem;
-  padding-left: "1rem" 
-}
-
+/* ─── stacked heading ───────────────────────────────────── */
 .headingWrapper {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.title {
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0;
-  color: #2d2d2d;
-  font-family: sans-serif;
-
-}
-
-.subtitle {
-  font-size: 18px;
-  font-weight: 400;
-  margin: 5rem 0 0 6rem;
-  color: #2d2d2d;
-  white-space: nowrap;
-  font-family: sans-serif;
-}
-
-.carouselWrapper {
-  position: relative;
-  overflow: visible;
-  padding: 0 2rem;
-}
-
-.swiper {
-  padding: 1rem 0;
-}
-
-.swiper-slide {
-  display: flex;
-  height: auto;
-  align-items: stretch;
-}
-
-
-.navBtn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  background: #fff;
-  color: #bbb;
-  font-size: 2rem;
-  cursor: pointer;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  z-index: 6;
-}
-
-.navBtn:hover {
-  color: #888;
-}
-
-.prevBtn {
-  left: -1.5rem;
-}
-
-.nextBtn {
-  right: -1.5rem;
-}
-
-/* fades */
-.fade {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 40px;
-  pointer-events: none;
-  z-index: 5;
-}
-
-.fadeLeft {
-  left: 0;
-  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-}
-
-.fadeRight {
-  right: 0;
-  background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
-}
-
-/* card */
-.card {
-  flex: 1;
-  background: #fff;
-  border: 1px solid #ededed;
-  border-radius: 8px;
-  padding: 1.5rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 360px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.headingWrapper h2 {
+  font-size: clamp(1.8rem, 3.8vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.headingWrapper p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ─── Swiper fixes: ensure only 1 / 2 slides show ───────── */
+.swiper {
+  padding-bottom: 2.5rem;          /* room for pagination dots */
+}
+
+/* optional: keep slides at 100% width (mobile) */
+.slide {
+  width: 100% !important;          /* Swiper overrides need !important */
+}
+
+/* ─── testimonial card ──────────────────────────────────── */
+.card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .cardHeader {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-.cardHover {
-  transition: transform 0.3s ease;
-}
-
-.cardHover:hover {
-  transform: translateY(-8px);
+  margin-bottom: 1rem;
 }
 
 .avatar {
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  object-fit: cover;
-}
-
-.reviewer {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0;
+  background: #7a7cc7;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
 }
 
 .date {
-  font-size: 0.875rem;
-  color: #999;
+  font-size: 0.8rem;
+  color: #777;
 }
 
 .stars {
-  color: #ffb400;
-  font-size: 1.1rem;
+  color: #f39c12;
   margin-bottom: 0.75rem;
-}
-.starsRow {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  font-size: 1.2rem;
 }
 
-.tickIcon {
-  color: #007bff; 
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.comment {
-  font-size: 0.95rem;
-  color: #333;
-  line-height: 1.4;
-  margin-bottom: 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  flex-grow: 1;
-}
-
-.readMore {
-  align-self: flex-start;
-  background: none;
-  border: none;
-  color: #d41007;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 0;
-}
-
-@media (max-width: 768px) {
-  .headingWrapper {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .navBtn {
-    top: auto;
-    bottom: -2rem;
-    transform: none;
-    width: 36px;
-    height: 36px;
-    font-size: 1.5rem;
-  }
-  .prevBtn {
-    left: 10%;
-  }
-  .nextBtn {
-    right: 10%;
-  }
-  .fadeLeft,
-  .fadeRight {
-    width: 30px;
-  }
-  .card {
-    padding: 1rem;
-  }
-  .title {
-    font-size: 1.6rem;
+/* ─── desktop tweaks ( ≥ 1024 px ) ──────────────────────── */
+@media (min-width: 1024px) {
+  .slide {
+    width: calc((100% - 24px) / 2) !important;  /* exactly two per row */
   }
 }
