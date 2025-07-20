@@ -72,7 +72,10 @@ const Section4 = () => {
   }, [reviews.length]);
 
   return (
-    <section id="section4" className={styles.testimonialSection}>
+    <section
+      id="section4"
+      className={`${styles.testimonialSection} ${styles.section}`}
+    >
       <div className={styles.headerRow}>
         <div className={styles.headingWrapper}>
           <h2 className={styles.title}>

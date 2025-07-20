@@ -1,8 +1,8 @@
 /* ─── section wrapper ───────────────────────────────────── */
 .section {
   max-width: 1300px;
-  margin: 4rem auto;
-  padding: 2rem 1rem;
+  margin: 2rem auto;
+  padding: 4rem 1rem;
 }
 
 /* ─── stacked heading ───────────────────────────────────── */
